@@ -48,11 +48,15 @@
 %%
 
 programa 
-    : cabecalho variaveis T_INICIO lista_comandos T_FIM
+    : cabecalho variaveis 
+        { printf("\tAMEM\tx\n"); }
+    T_INICIO lista_comandos T_FIM
+        { printf("\tDMEM\tx\n\tFIMP\n"); }
     ; 
 
 cabecalho
     : T_PROGRAMA T_IDENTIF
+        { printf("\tINPP\n"); }
     ;
 
 variaveis
@@ -94,43 +98,71 @@ entrada_saida
 
 leitura
     : T_LEIA T_IDENTIF
+        { printf("\tLEIA\n\tARZG\tx\n"); }
     ;
 
 escrita
     : T_ESCREVA expressao
+        { printf("\tESCR\n"); }
     ;
 
 repeticao
-    : T_ENQUANTO expressao T_FACA lista_comandos T_FIMENQUANTO
+    : T_ENQUANTO 
+        { printf("Lx\tNADA\n"); }
+    expressao T_FACA
+        { printf("\tDSVF\tLy\n"); }
+    lista_comandos 
+    T_FIMENQUANTO
+        { printf("\tDSVS\tLx\nLy\tNADA\n"); }
     ;
 
 selecao
-    : T_SE expressao T_ENTAO lista_comandos T_SENAO lista_comandos T_FIMSE
+    : T_SE expressao T_ENTAO 
+        { printf("\tDSVF\tLx\n"); }
+    lista_comandos T_SENAO 
+        { printf("\tDSVS\tLy\nLx\tNADA\n"); }
+    lista_comandos T_FIMSE
+        { printf("Ly\tNADA\n"); }
     ;
 
 atribuicao
     : T_IDENTIF T_ATRIBUICAO expressao
+        { printf("\tARZG\tx\n"); }
     ;
 
 expressao
     : expressao T_VEZES expressao
+        { printf("\tMULT\n"); }
     | expressao T_DIV expressao
+        { printf("\tDIVI\n"); }
     | expressao T_MAIS expressao
+        { printf("\tSOMA\n"); }
     | expressao T_MENOS expressao
+        { printf("\tMENOS\n"); }
     | expressao T_MAIOR expressao
+        { printf("\tCMMA\n"); }
     | expressao T_MENOR expressao
+        { printf("\tCMME\n"); }
     | expressao T_IGUAL expressao
+        { printf("\tCMMIG\n"); }
     | expressao T_E expressao
+        { printf("\tCONJ\n"); }
     | expressao T_OU expressao
+        { printf("\tDISJ\n"); }
     | termo
     ;
 
 termo
     : T_IDENTIF
+        { printf("\tCRVG\tx\n"); }
     | T_NUMERO
+        { printf("\tCRCT\tk\n"); }
     | T_V
+        { printf("\tCRVG\t1\n"); }
     | T_F
+        { printf("\tCRVG\t0\n"); }
     | T_NAO termo
+        { printf("\tNEGA\n"); }
     | T_ABRE expressao T_FECHA
     ;
 %%
