@@ -82,9 +82,9 @@ Graças aos seguintes filhos da puta, eu tenho que estudar essas merdas:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://s2.glbimg.com/FUcw2usZfSTL6yCCGj3L3v3SpJ8=/smart/e.glbimg.com/og/ed/f/original/2019/04/25/zuckerberg_podcast.jpg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+        <img src="https://static.wikia.nocookie.net/backyardigans/images/7/70/Agente_de_Entrega_Tyrone.png/revision/latest?cb=20211102012706&path-prefix=pt-br" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
         <sub>
-          <b>Mark Zuckerberg</b>
+          <b>Tyrone dos Backyardigans</b>
         </sub>
       </a>
     </td>
