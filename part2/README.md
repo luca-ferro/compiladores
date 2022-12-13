@@ -74,7 +74,7 @@ Graças aos seguintes filhos da puta, eu tenho que estudar essas merdas:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://yt3.googleusercontent.com/ytc/AMLnZu_y_cp7lzmb7b3fYsdFDncu0OdEqh_YJh7J0k-g=s900-c-k-c0x00ffffff-no-rj" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <img src="https://yt3.googleusercontent.com/ytc/AMLnZu_y_cp7lzmb7b3fYsdFDncu0OdEqh_YJh7J0k-g=s900-c-k-c0x00ffffff-no-rj" width="100px;" height="100px" alt="Foto do Steve Jobs"/><br>
         <sub>
           <b>Manoel Gomes</b>
         </sub>
@@ -82,7 +82,7 @@ Graças aos seguintes filhos da puta, eu tenho que estudar essas merdas:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://static.wikia.nocookie.net/backyardigans/images/7/70/Agente_de_Entrega_Tyrone.png/revision/latest?cb=20211102012706&path-prefix=pt-br" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+        <img src="https://static.wikia.nocookie.net/backyardigans/images/7/70/Agente_de_Entrega_Tyrone.png/revision/latest?cb=20211102012706&path-prefix=pt-br" width="100px;" height="100px" alt="Foto do Mark Zuckerberg"/><br>
         <sub>
           <b>Tyrone dos Backyardigans</b>
         </sub>
