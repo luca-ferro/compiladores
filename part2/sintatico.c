@@ -1386,157 +1386,157 @@ yyreduce:
     {
   case 2:
 #line 52 "sintatico.y"
-        { printf("\tAMEM\tx\n"); }
+        { fprintf(yyout, "\tAMEM\tx\n"); }
 #line 1391 "sintatico.c"
     break;
 
   case 3:
 #line 54 "sintatico.y"
-        { printf("\tDMEM\tx\n\tFIMP\n"); }
+        { fprintf(yyout, "\tDMEM\tx\n\tFIMP\n"); }
 #line 1397 "sintatico.c"
     break;
 
   case 4:
 #line 59 "sintatico.y"
-        { printf("\tINPP\n"); }
+        { fprintf(yyout, "\tINPP\n"); }
 #line 1403 "sintatico.c"
     break;
 
   case 21:
 #line 101 "sintatico.y"
-        { printf("\tLEIA\n\tARZG\tx\n"); }
+        { fprintf(yyout, "\tLEIA\n\tARZG\tx\n"); }
 #line 1409 "sintatico.c"
     break;
 
   case 22:
 #line 106 "sintatico.y"
-        { printf("\tESCR\n"); }
+        { fprintf(yyout, "\tESCR\n"); }
 #line 1415 "sintatico.c"
     break;
 
   case 23:
 #line 111 "sintatico.y"
-        { printf("Lx\tNADA\n"); }
+        { fprintf(yyout, "Lx\tNADA\n"); }
 #line 1421 "sintatico.c"
     break;
 
   case 24:
 #line 113 "sintatico.y"
-        { printf("\tDSVF\tLy\n"); }
+        { fprintf(yyout, "\tDSVF\tLy\n"); }
 #line 1427 "sintatico.c"
     break;
 
   case 25:
 #line 116 "sintatico.y"
-        { printf("\tDSVS\tLx\nLy\tNADA\n"); }
+        { fprintf(yyout, "\tDSVS\tLx\nLy\tNADA\n"); }
 #line 1433 "sintatico.c"
     break;
 
   case 26:
 #line 121 "sintatico.y"
-        { printf("\tDSVF\tLx\n"); }
+        { fprintf(yyout, "\tDSVF\tLx\n"); }
 #line 1439 "sintatico.c"
     break;
 
   case 27:
 #line 123 "sintatico.y"
-        { printf("\tDSVS\tLy\nLx\tNADA\n"); }
+        { fprintf(yyout, "\tDSVS\tLy\nLx\tNADA\n"); }
 #line 1445 "sintatico.c"
     break;
 
   case 28:
 #line 125 "sintatico.y"
-        { printf("Ly\tNADA\n"); }
+        { fprintf(yyout, "Ly\tNADA\n"); }
 #line 1451 "sintatico.c"
     break;
 
   case 29:
 #line 130 "sintatico.y"
-        { printf("\tARZG\tx\n"); }
+        { fprintf(yyout, "\tARZG\tx\n"); }
 #line 1457 "sintatico.c"
     break;
 
   case 30:
 #line 135 "sintatico.y"
-        { printf("\tMULT\n"); }
+        { fprintf(yyout, "\tMULT\n"); }
 #line 1463 "sintatico.c"
     break;
 
   case 31:
 #line 137 "sintatico.y"
-        { printf("\tDIVI\n"); }
+        { fprintf(yyout, "\tDIVI\n"); }
 #line 1469 "sintatico.c"
     break;
 
   case 32:
 #line 139 "sintatico.y"
-        { printf("\tSOMA\n"); }
+        { fprintf(yyout, "\tSOMA\n"); }
 #line 1475 "sintatico.c"
     break;
 
   case 33:
 #line 141 "sintatico.y"
-        { printf("\tMENOS\n"); }
+        { fprintf(yyout, "\tMENOS\n"); }
 #line 1481 "sintatico.c"
     break;
 
   case 34:
 #line 143 "sintatico.y"
-        { printf("\tCMMA\n"); }
+        { fprintf(yyout, "\tCMMA\n"); }
 #line 1487 "sintatico.c"
     break;
 
   case 35:
 #line 145 "sintatico.y"
-        { printf("\tCMME\n"); }
+        { fprintf(yyout, "\tCMME\n"); }
 #line 1493 "sintatico.c"
     break;
 
   case 36:
 #line 147 "sintatico.y"
-        { printf("\tCMMIG\n"); }
+        { fprintf(yyout, "\tCMMIG\n"); }
 #line 1499 "sintatico.c"
     break;
 
   case 37:
 #line 149 "sintatico.y"
-        { printf("\tCONJ\n"); }
+        { fprintf(yyout, "\tCONJ\n"); }
 #line 1505 "sintatico.c"
     break;
 
   case 38:
 #line 151 "sintatico.y"
-        { printf("\tDISJ\n"); }
+        { fprintf(yyout, "\tDISJ\n"); }
 #line 1511 "sintatico.c"
     break;
 
   case 40:
 #line 157 "sintatico.y"
-        { printf("\tCRVG\tx\n"); }
+        { fprintf(yyout, "\tCRVG\tx\n"); }
 #line 1517 "sintatico.c"
     break;
 
   case 41:
 #line 159 "sintatico.y"
-        { printf("\tCRCT\tk\n"); }
+        { fprintf(yyout, "\tCRCT\tk\n"); }
 #line 1523 "sintatico.c"
     break;
 
   case 42:
 #line 161 "sintatico.y"
-        { printf("\tCRVG\t1\n"); }
+        { fprintf(yyout, "\tCRVG\t1\n"); }
 #line 1529 "sintatico.c"
     break;
 
   case 43:
 #line 163 "sintatico.y"
-        { printf("\tCRVG\t0\n"); }
+        { fprintf(yyout, "\tCRVG\t0\n"); }
 #line 1535 "sintatico.c"
     break;
 
   case 44:
 #line 165 "sintatico.y"
-        { printf("\tNEGA\n"); }
+        { fprintf(yyout, "\tNEGA\n"); }
 #line 1541 "sintatico.c"
     break;
 
@@ -1776,7 +1776,26 @@ yyreturn:
 #line 168 "sintatico.y"
 
 
-int main () {
+int main (int argc, char *argv[]) {
+    char *p, nameIn[100], nameOut[100];
+    argv++;
+    if (argc < 2) {
+        puts("\nCompilador Simples");
+        puts("\n\tUso: ./simples <NOME>[.simples]\n\n");
+        exit(10);
+    }
+    p = strstr(argv[0], ".simples");
+    if (p) *p = 0;
+    strcpy(nameIn, argv[0]);
+    strcat(nameIn, ".simples");
+    strcpy(nameOut, argv[0]);
+    strcat(nameOut, ".mvs");
+    yyin = fopen(nameIn, "rt");
+    if (!yyin) {
+        puts("Programa fonte não encontrado!");
+        exit(20);
+    }
+    yyout = fopen(nameOut, "wt");
     yyparse();
     puts("programa ok");
 }
