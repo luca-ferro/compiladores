@@ -2,7 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
 #include "lexico.c"
+#include "utils.c"
+int contaVar;
 %}
 
 %token T_PROGRAMA
@@ -48,8 +51,10 @@
 %%
 
 programa 
-    : cabecalho variaveis 
-        { fprintf(yyout, "\tAMEM\tx\n"); }
+    : cabecalho
+        { contaVar = 0; }
+    variaveis 
+        { fprintf(yyout, "\tAMEM\t%d\n", contaVar); }
     T_INICIO lista_comandos T_FIM
         { fprintf(yyout, "\tDMEM\tx\n\tFIMP\n"); }
     ; 
@@ -75,8 +80,21 @@ tipo
     ;
 
 lista_variaveis
-    : T_IDENTIF lista_variaveis
+
+    : lista_variaveis T_IDENTIF 
+        { 
+            strcpy(elemTab.id, atomo);
+            elemTab.end = contaVar;
+            insereSimbolo(elemTab);
+            contaVar++;    
+        }
     | T_IDENTIF
+        {
+            strcpy(elemTab.id, atomo);
+            elemTab.end = contaVar;
+            insereSimbolo(elemTab);
+            contaVar++;
+        }
     ;
 
 lista_comandos
@@ -97,8 +115,12 @@ entrada_saida
     ;
 
 leitura
-    : T_LEIA T_IDENTIF
-        { fprintf(yyout, "\tLEIA\n\tARZG\tx\n"); }
+    : T_LEIA T_IDENTIF {
+        int pos = buscaSimbolo(atomo);
+        if (pos == -1)
+            yyerror("Identificador não declarado.");
+        fprintf(yyout, "\tLEIA\n\tARZG\t%d\n", tabSimb[pos].end); 
+        }
     ;
 
 escrita
@@ -138,7 +160,7 @@ expressao
     | expressao T_MAIS expressao
         { fprintf(yyout, "\tSOMA\n"); }
     | expressao T_MENOS expressao
-        { fprintf(yyout, "\tMENOS\n"); }
+        { fprintf(yyout, "\tSUBT\n"); }
     | expressao T_MAIOR expressao
         { fprintf(yyout, "\tCMMA\n"); }
     | expressao T_MENOR expressao
@@ -154,9 +176,12 @@ expressao
 
 termo
     : T_IDENTIF
-        { fprintf(yyout, "\tCRVG\tx\n"); }
+        { 
+            int pos = buscaSimbolo(atomo);
+            fprintf(yyout, "\tCRVG\t%d\n", tabSimb[pos].end); 
+        }
     | T_NUMERO
-        { fprintf(yyout, "\tCRCT\tk\n"); }
+        { fprintf(yyout, "\tCRCT\t%s\n", atomo); }
     | T_V
         { fprintf(yyout, "\tCRVG\t1\n"); }
     | T_F
