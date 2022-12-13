@@ -68,7 +68,7 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 ## 🤝 Colaboradores
 
-Graças aos seguintes filhos da puta, eu tenho que estudar essas merdas:
+Gostaria de agradecer aos grandes pensadores que proveram o conhecimento e possibilitaram a execução do projeto:
 
 <table>
   <tr>
