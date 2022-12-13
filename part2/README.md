@@ -84,7 +84,7 @@ Graças aos seguintes filhos da puta, eu tenho que estudar essas merdas:
       <a href="#">
         <img src="https://static.wikia.nocookie.net/backyardigans/images/7/70/Agente_de_Entrega_Tyrone.png/revision/latest?cb=20211102012706&path-prefix=pt-br" width="100px;" height="100px;" alt="Foto do Mark Zuckerberg"/><br>
         <sub>
-          <b>Tyrone dos Backyardigans</b>
+          <b>Tyrone</b>
         </sub>
       </a>
     </td>
