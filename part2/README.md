@@ -74,9 +74,9 @@ Graças aos seguintes filhos da puta, eu tenho que estudar essas merdas:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <img src="https://yt3.googleusercontent.com/ytc/AMLnZu_y_cp7lzmb7b3fYsdFDncu0OdEqh_YJh7J0k-g=s900-c-k-c0x00ffffff-no-rj" width="100px;" alt="Foto do Steve Jobs"/><br>
         <sub>
-          <b>Sofia Espanha</b>
+          <b>Manoel Gomes</b>
         </sub>
       </a>
     </td>
